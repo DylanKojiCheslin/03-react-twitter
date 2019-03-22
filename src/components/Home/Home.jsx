@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import { Message } from './Message'
-// import { getMessages } from '../../api/messageApi';
 import { connect } from 'react-redux';
 
 export class Home  extends Component  {
   constructor(props) {
+    console.log('stuff');
         super();
         this.state = {messages : []};
   }
   
   componentDidMount() {
+    console.log('are you mounting?')
     this.initializeHome();
   }
   

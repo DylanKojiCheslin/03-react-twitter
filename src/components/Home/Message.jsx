@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import TimeAgo from 'react-timeago';
 
 export class Message extends Component {
   
@@ -9,8 +10,8 @@ export class Message extends Component {
   render(){
     return (
       <div>
-        {this.props.text}
-        {this.props.created_at}
+        {this.props.text} 
+        <TimeAgo date={this.props.created_at} />
       </div>
       //tweet text
       //who wrote the tweet 
