@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { TimeSinceDate } from  './TimeSinceDate';
+import { TimeSince } from  './TimeSince';
 import './Message.css';
 
 export class Message extends Component {
@@ -15,7 +15,7 @@ export class Message extends Component {
           {this.props.text} 
         </div>
         <div className="timeSinceDate">
-          <TimeSinceDate created_at={this.props.created_at} />
+          <TimeSince created_at={this.props.created_at} />
         </div>
         <div className="messageStars">
           {this.props.stars} stars
