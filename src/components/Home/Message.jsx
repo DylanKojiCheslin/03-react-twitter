@@ -11,6 +11,11 @@ export class Message extends Component {
   render(){
     return (
       <div className='messageContent'>
+        <div className='hanle'>{this.props.hanle}</div>
+        <img
+          src={this.props.image}
+          alt='The writers avatar'
+          />
         <div className="messageText">
           {this.props.text} 
         </div>
@@ -21,10 +26,6 @@ export class Message extends Component {
           {this.props.stars} stars
         </div>
       </div>
-      //tweet text
-      //who wrote the tweet 
-      //date 
-      //tweet star #
     )
   }
 }
