@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import TimeAgo from 'react-timeago';
+import './Message.css';
+import Icon from '@material-ui/core/Icon';
 
 export class Message extends Component {
   
@@ -9,9 +11,16 @@ export class Message extends Component {
   
   render(){
     return (
-      <div>
-        {this.props.text} 
-        <TimeAgo date={this.props.created_at} />
+      <div className='messageContent'>
+        <div className="messageText">
+          {this.props.text} 
+        </div>
+        <div className="timeAgo">
+          <TimeAgo date={this.props.created_at} />
+        </div>
+        <div className="messageStars">
+          {this.props.stars} stars
+        </div>
       </div>
       //tweet text
       //who wrote the tweet 

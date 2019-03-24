@@ -4,13 +4,11 @@ import { connect } from 'react-redux';
 
 export class Home  extends Component  {
   constructor(props) {
-    console.log('stuff');
         super();
         this.state = {messages : []};
   }
   
   componentDidMount() {
-    console.log('are you mounting?')
     this.initializeHome();
   }
   
@@ -31,7 +29,7 @@ export class Home  extends Component  {
     return(
       <div>
         <ul>
-          {this.state.messages.map( message => <Message text={message.text} created_at={message.created_at} key={message.id} />)}          
+          {this.state.messages.map( message => <Message text={message.text} created_at={message.created_at} stars={message.stars} key={message.id} />)}          
         </ul>
       </div>
     )

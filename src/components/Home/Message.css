@@ -1,0 +1,10 @@
+.timeAgo {
+  color: #777;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 0.5em;
+}
+.messageContent {
+  display: flex;
+  align-items: center;
+}
