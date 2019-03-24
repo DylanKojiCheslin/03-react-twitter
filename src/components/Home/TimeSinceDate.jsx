@@ -4,7 +4,6 @@ import TimeAgo from 'react-timeago';
 export class TimeSinceDate extends Component {
   
   constructor(props){
-    console.log(props);
     super();
   }
   
